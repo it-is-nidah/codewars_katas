@@ -12,6 +12,12 @@ def even_or_odd(number):
 print(even_or_odd(20))
 ```
 
+Another "clever" solution;
+```python
+def even_or_odd(number):
+  return 'Even' if number % 2 == 0 else 'Odd'
+```
+
 For more information on modulo operator ( % );
 
 https://www.geeksforgeeks.org/what-is-a-modulo-operator-in-python/
