@@ -23,9 +23,9 @@ Solution 2:
 
 ```python
 
-def reverse_words(str):
+def reverse_words(text):
   newStr = []
-  for i in str.split(' '):
+  for i in text.split(' '):
       newStr.append(i[::-1])
   return ' '.join(newStr)
 print(reverse_words("leon is leoo"))
