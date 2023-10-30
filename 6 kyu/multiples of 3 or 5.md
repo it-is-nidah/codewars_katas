@@ -6,7 +6,7 @@ Additionally, if the number is negative, return 0.
 
 Note: If the number is a multiple of both 3 and 5, only count it once.
 
-Solution
+Python Solution:
 ```python
 
 def solution(number):
@@ -23,4 +23,24 @@ def solution(number):
 result = solution(10)
 print(result)  # Output should be 23
 
+```
+
+C++ Solution:
+```cpp
+int solution(int number){ 
+  if (number < 0){
+    return 0; 
+  }
+  
+  int sum = 0;
+  
+  for(int i = 1; i < number; i++) {
+    
+    if(i % 5 == 0 || i % 3 == 0){
+      sum += i;
+    }
+    
+  }
+  return sum;
+}
 ```
