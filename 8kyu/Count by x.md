@@ -10,6 +10,19 @@ count_by(1,10) #should return [1,2,3,4,5,6,7,8,9,10]
 
 count_by(2,5) #should return [2,4,6,8,10]
 
+
+Solution 1
+```python
+
+def count_by(x, n):
+    myArr = []
+    for i in range(1, n+1):
+        result = x * i
+        myArr.append(result)
+    return myArr
+```
+
+Solution 2
 ```python
 
 def count_by(x, n):
